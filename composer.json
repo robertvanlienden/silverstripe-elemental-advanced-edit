@@ -1,7 +1,7 @@
 {
     "name": "robertvanlienden/silverstripe-elemental-advanced-edit",
     "description": "Elemental advanced edit module",
-    "type": "silverstripe-vendormodule",
+    "type": "silverstripe-module",
     "keywords": [
         "silverstripe",
         "element",
