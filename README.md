@@ -7,7 +7,7 @@ that are not avalable in inline editing (such as DisplayLogic/GridFields/etc.).
 
 More info about the idea of an "advanced editing" menu for elemental; https://github.com/silverstripe/silverstripe-elemental/issues/757
 
-#### Screenshot
+### Screenshot
 
 ![screenshot](screenshot.png)
 
