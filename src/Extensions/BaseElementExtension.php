@@ -9,6 +9,7 @@ use SilverStripe\CMS\Controllers\CMSPageEditController;
 use SilverStripe\Forms\FieldList;
 use SilverStripe\CMS\Model\SiteTree;
 use DNADesign\Elemental\Models\BaseElement;
+use SilverStripe\Core\Config\Config;
 
 /***
  * Class BaseElementExtension
@@ -39,8 +40,8 @@ class BaseElementExtension extends DataExtension
     {
         $owner = $this->owner;
 
-        if (self::$inline_editable === true &&
-            self::$advanced_editing === true &&
+        if ($owner->inlineEditable() === true &&
+            $this->advancedEditing() === true &&
             !strpos($_SERVER['REQUEST_URI'], 'EditForm')
         )
         {
@@ -75,7 +76,7 @@ class BaseElementExtension extends DataExtension
         /** @var BaseElement $owner */
         $owner = $this->owner;
 
-        if (self::$advanced_editing && $owner->ID) {
+        if ($this->advancedEditing() && $owner->ID) {
             /** @var \Page $page */
             $page = $owner->getPage();
             $relationName = $owner->getAreaRelationName();
@@ -88,5 +89,14 @@ class BaseElementExtension extends DataExtension
                 'edit'
             );
         }
+    }
+
+    /**
+     * Proxy through to configuration setting 'advanced_editing'
+     *
+     * @return bool
+     */
+    public function advancedEditing() {
+        return $this->owner->config()->get('advanced_editing');
     }
 }
