@@ -11,6 +11,10 @@ More info about the idea of an "advanced editing" menu for elemental; https://gi
 
 ![screenshot](screenshot.png)
 
+### TO-DO
+* Add an variable (`private static $hide_inline = [];`) to hide specific fields on inline edit
+  * This to hide "complex fields" and made them only available in the advanced editing
+
 ## Requirements
 * SilverStripe ^4.8
 * dnadesign/silverstripe-elemental ^4.7
@@ -24,9 +28,6 @@ You can add the following variable to a element to turn advanced editing off.
 `private static $advanced_editing = false;`
 
 The advanced edit link will only get rendered when inline editing.
-
-### TO-DO
-* Add an variable (`private static $hide_inline = [];`) to hide specific fields on inline edit
 
 ## License
 See [License](LICENSE)
