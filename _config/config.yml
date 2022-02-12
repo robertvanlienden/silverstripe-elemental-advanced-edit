@@ -1,0 +1,12 @@
+---
+Name: elemental-advanced-edit
+After:
+  - 'elemental'
+---
+SilverStripe\Core\Manifest\ModuleManifest:
+  module_priority:
+    - robertvanlienden/silverstripe-elemental-advanced-edit
+
+DNADesign\Elemental\Models\BaseElement:
+  extensions:
+    - RobertVanLienden\ElementalAdvancedEdit\Extensions\BaseElementExtension
