@@ -2,7 +2,7 @@
 
 A simple extension that adds the a CMS Edit link to an element that is inline-editable.
 
-Released as work-around to use inline editting on a element that has "complex fields" 
+Created as work-around to use inline editting on a element that has "complex fields" 
 that are not avalable in inline editing (such as DisplayLogic/GridFields/etc.).
 
 More info about the idea of an "advanced editing" menu for elemental; https://github.com/silverstripe/silverstripe-elemental/issues/757
