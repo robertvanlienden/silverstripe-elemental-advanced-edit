@@ -24,7 +24,7 @@ More info about the idea of an "advanced editing" menu for elemental; https://gi
 
 ## Configuration
 By default, advanced editing is turned on. 
-You can add the following variable to a element to turn advanced editing off.
+You can add the following variable to a element to turn advanced editing off:\
 `private static $advanced_editing = false;`
 
 The advanced edit link will only get rendered when inline editing.
