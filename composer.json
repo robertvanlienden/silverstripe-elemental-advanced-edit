@@ -18,7 +18,7 @@
     "require": {
         "php": ">=7.2.0",
         "silverstripe/admin": "^1.7@stable",
-        "silverstripe/cms": "^4.8@stable",
+        "silverstripe/cms": "^4.8@stable || 5.*",
         "silverstripe/vendor-plugin": "^1.0",
         "dnadesign/silverstripe-elemental": "^4.7"
     },
