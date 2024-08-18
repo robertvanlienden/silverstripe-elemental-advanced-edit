@@ -19,7 +19,7 @@
         "php": ">=7.2.0",
         "silverstripe/admin": "^2.0@stable",
         "silverstripe/cms": "^4.8@stable || 5.*",
-        "silverstripe/vendor-plugin": "^1.0",
+        "silverstripe/vendor-plugin": "^2.0",
         "dnadesign/silverstripe-elemental": "^4.7"
     },
     "require-dev": {
